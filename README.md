@@ -1,1 +1,2 @@
-# hexlet-django-blog
+# Test django-project on hexlet
+
