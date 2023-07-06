@@ -12,3 +12,6 @@ publish:
 
 start:
 	python manage.py runserver
+
+migration:
+	python manage.py makemigrations
