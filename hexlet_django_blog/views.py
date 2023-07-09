@@ -5,14 +5,12 @@ from hexlet_django_blog.article.views import index
 
 
 class HomePageView(TemplateView):
-    # template_name = "index.html"
-    # def get_context_data(self, **kwargs):
-    #     context = super().get_context_data(**kwargs)
-    #     context['who'] = 'World'
-    #     return context
-    
-    def go_to_article(self):
-        redirect('article')
+    template_name = "index.html"
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['who'] = 'World'
+        return context
+
 
 def about(request):
     tags = ['обучение', 'программирование', 'python', 'oop']
