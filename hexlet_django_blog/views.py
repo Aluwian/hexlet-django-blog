@@ -1,7 +1,7 @@
-from django.shortcuts import render, redirect
-from django.urls import reverse_lazy
+from django.shortcuts import render
+
 from django.views.generic.base import TemplateView
-from hexlet_django_blog.article.views import index
+
 
 
 class HomePageView(TemplateView):
